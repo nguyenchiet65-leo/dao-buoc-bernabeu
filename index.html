@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dạo Bước Bernabeu | Real Madrid CF</title>
+    <style>
+        /* -----------------------------------------------------------
+           CSS CƠ BẢN - CHỌN FONT CHỮ VÀ MÀU NỀN
+           ----------------------------------------------------------- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #ffffff; /* Nền trắng chủ đạo */
+            color: #333333; /* Màu chữ đen xám cho dễ đọc */
+            line-height: 1.6;
+        }
+
+        /* -----------------------------------------------------------
+           HEADER - PHẦN ĐẦU TRANG VỚI TÔNG MÀU VÀNG
+           ----------------------------------------------------------- */
+        header {
+            background: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%); /* Nền gradient vàng hoàng gia */
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Tạo chiều sâu cho chữ */
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 10px;
+        }
+
+        /* -----------------------------------------------------------
+           NỘI DUNG CHÍNH - CÁC CARD THÔNG TIN
+           ----------------------------------------------------------- */
+        .container {
+            max-width: 1000px; /* Độ rộng tối đa của nội dung */
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #ffffff; /* Nền trắng của card */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ */
+            margin-bottom: 40px;
+            border-top: 5px solid #D4AF37; /* Viền vàng hoàng gia trên cùng */
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .card-header {
+            padding: 15px 30px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-title {
+            margin: 0;
+            font-size: 1.5em;
+            color: #D4AF37; /* Màu vàng hoàng gia cho tiêu đề card */
+            text-transform: uppercase;
+        }
+
+        /* -----------------------------------------------------------
+           CHI TIẾT CÁC PHẦN
+           ----------------------------------------------------------- */
+        .team-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .team-info li {
+            font-size: 1.1em;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .team-info li strong {
+            color: #333;
+            width: 200px;
+            display: inline-block;
+        }
+
+        /* Phần Logo và Slogan */
+        .logo-slogan-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px;
+        }
+
+        .logo-section {
+            text-align: center;
+        }
+
+        .logo-placeholder {
+            max-width: 180px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #D4AF37;
+            padding: 10px;
+        }
+
+        .slogan-section {
+            text-align: right;
+            max-width: 50%;
+        }
+
+        .slogan-section blockquote {
+            font-family: 'Playfair Display', serif; /* Font chữ cho slogan (nếu có, hoặc mặc định) */
+            font-size: 1.4em;
+            font-style: italic;
+            color: #D4AF37; /* Slogan màu vàng hoàng gia */
+            margin: 0;
+        }
+
+        .slogan-section small {
+            color: #777;
+            font-style: normal;
+        }
+
+        /* -----------------------------------------------------------
+           PHẦN CHÂN TRANG
+           ----------------------------------------------------------- */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #f8f8f8;
+            color: #777;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PHẦN ĐẦU TRANG VỚI TÔNG MÀU VÀNG TRẮNG -->
+    <header>
+        <h1>Dạo Bước Bernabeu</h1>
+        <p>Hành trình khám phá Đội bóng vĩ đại nhất lịch sử</p>
+    </header>
+
+    <div class="container">
+
+        <!-- CARD THÔNG TIN VỀ TÊN ĐỘI BÓNG -->
+        <div class="card team-info">
+            <div class="card-header">
+                <h2 class="card-title">Tên Đội Bóng</h2>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Tên chính thức:</strong> Real Madrid Club de Fútbol</li>
+                    <li><strong>Tên viết tắt:</strong> Real Madrid, RMA</li>
+                    <li><strong>Biệt danh:</strong> Los Blancos, Los Merengues</li>
+                    <li><strong>Biệt danh phổ biến:</strong> Kền kền trắng, Đội bóng Hoàng gia Tây Ban Nha</li>
+                </ul>
+            </div>
+        </div>
+       <!-- CARD THÔNG TIN VỀ LOGO VÀ SLOGAN -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Logo & Slogan Hoàng Gia</h2>
+            </div>
+            <div class="card-body logo-slogan-card">
+                <div class="logo-section">
+                    <!-- Link logo Real Madrid chính thức -->
+                    <img src="https://images.seeklogo.com/logo-png/11/1/real-madrid-club-de-futbol-logo-png_seeklogo-116421.png?v=638653799950000000" alt="Real Madrid CF Logo" style="max-width: 150px; height: auto;">
+                    <p><small style="color: #777; display: block; margin-top: 10px;">Logo chính thức của CLB</small></p>
+                </div>
+                <div class="slogan-section">
+                    <blockquote style="font-size: 1.5em; font-style: italic; color: #D4AF37; margin: 0; font-weight: bold;">
+                        "¡Hala Madrid y nada más!"
+                    </blockquote>
+                    <p><small style="color: #777;">(Tiến lên Madrid, và không gì khác nữa!)</small></p>
+                </div>
+            </div>
+        </div>
+<!-- ===========================================================
+             CARD 3: NĂM THÀNH LẬP & LỊCH SỬ HÀO HÙNG
+             =========================================================== -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Năm Thành Lập & Lịch Sử</h2>
+            </div>
+            <div class="card-body">
+                <p style="font-size: 1.1em; margin-bottom: 20px;">
+                    <strong>Ngày thành lập:</strong> 6 tháng 3, 1902 (Ban đầu mang tên <em>Madrid Foot-ball Club</em>).<br>
+                    <strong>Người sáng lập:</strong> Các anh em nhà Padrós (Juan Padrós và Carlos Padrós) cùng với Adolfo Meléndez.
+                </p>
+                
+                <!-- Hiệu ứng dòng thời gian (Timeline) lịch sử -->
+                <h3 style="color: #333; font-size: 1.2em; border-left: 4px solid #D4AF37; padding-left: 10px; margin-top: 30px;">Các Cột Mốc Vàng Son</h3>
+                <div style="border-left: 2px dashed #D4AF37; margin-left: 15px; padding-left: 20px; margin-top: 15px;">
+                    
+                    <div style="margin-bottom: 20px; position: relative;">
+                        <span style="position: absolute; left: -27px; top: 2px; background: #D4AF37; width: 12px; height: 12px; border-radius: 50%;"></span>
+                        <strong style="color: #D4AF37;">Năm 1920:</strong> Được Vua Alfonso XIII ban tặng danh hiệu "Real" (Hoàng gia) và chính thức thêm vương miện vào logo.
+                    </div>
+                    
+                    <div style="margin-bottom: 20px; position: relative;">
+                        <span style="position: absolute; left: -27px; top: 2px; background: #D4AF37; width: 12px; height: 12px; border-radius: 50%;"></span>
+                        <strong style="color: #D4AF37;">Thập niên 1950:</strong> Kỷ nguyên thống trị đầu tiên với huyền thoại Alfredo Di Stéfano, thiết lập kỷ lục vô tiền khoáng hậu: Vô địch Cúp C1 (Champions League) 5 lần liên tiếp.
+                    </div>
+                    
+                    <div style="margin-bottom: 20px; position: relative;">
+                        <span style="position: absolute; left: -27px; top: 2px; background: #D4AF37; width: 12px; height: 12px; border-radius: 50%;"></span>
+                        <strong style="color: #D4AF37;">Thập niên 2000:</strong> Chủ tịch Florentino Pérez khai sinh kỷ nguyên "Galácticos" (Dải ngân hà), đưa về những siêu sao thế giới như Zidane, Ronaldo Luís Nazário de Lima, Beckham, Figo.
+                    </div>
+                    
+                    <div style="position: relative;">
+                        <span style="position: absolute; left: -27px; top: 2px; background: #D4AF37; width: 12px; height: 12px; border-radius: 50%;"></span>
+                        <strong style="color: #D4AF37;">2014 - Nay:</strong> Hoàn thành giấc mơ "La Décima" (Cúp C1 thứ 10) và lập cú ăn 3 Champions League vĩ đại liên tiếp (2016-2018) dưới sự dẫn dắt của Zinedine Zidane, khẳng định vị thế CLB vĩ đại nhất thế kỷ.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- ===========================================================
+             CARD 4: MÀU SẮC TRUYỀN THỐNG (Bố cục 3 cột tương thích tốt)
+             =========================================================== -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Màu Sắc Bản Sắc</h2>
+            </div>
+            <div class="card-body" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; text-align: center;">
+                
+                <!-- Áo sân nhà -->
+                <div style="flex: 1; min-width: 200px; padding: 15px; border: 1px solid #eee; border-radius: 8px; background: #fafafa;">
+                    <div style="width: 70px; height: 70px; background-color: #ffffff; border: 3px solid #D4AF37; border-radius: 50%; margin: 0 auto 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"></div>
+                    <strong style="font-size: 1.1em; color: #333;">Trang phục Sân Nhà</strong>
+                    <p style="margin: 8px 0 0; color: #666; font-size: 0.95em;">Màu trắng tinh khôi chủ đạo (biệt danh <em>"Los Blancos"</em>), thường kết hợp các đường kẻ chỉ vàng hoặc đen sang trọng.</p>
+                </div>
+                
+                <!-- Áo sân khách -->
+                <div style="flex: 1; min-width: 200px; padding: 15px; border: 1px solid #eee; border-radius: 8px; background: #fafafa;">
+                    <div style="width: 70px; height: 70px; background-color: #1a237e; border: 3px solid #D4AF37; border-radius: 50%; margin: 0 auto 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"></div>
+                    <strong style="font-size: 1.1em; color: #333;">Trang phục Sân Khách</strong>
+                    <p style="margin: 8px 0 0; color: #666; font-size: 0.95em;">Thường sử dụng màu Tím truyền thống, Xanh dương đậm hoặc màu Xám xám lịch lãm tùy theo từng mùa giải.</p>
+                </div>
+                
+                <!-- Áo thứ 3 -->
+                <div style="flex: 1; min-width: 200px; padding: 15px; border: 1px solid #eee; border-radius: 8px; background: #fafafa;">
+                    <div style="width: 70px; height: 70px; background-color: #111111; border: 3px solid #D4AF37; border-radius: 50%; margin: 0 auto 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);"></div>
+                    <strong style="font-size: 1.1em; color: #333;">Trang phục Thứ Ba</strong>
+                    <p style="margin: 8px 0 0; color: #666; font-size: 0.95em;">Thường đột phá với các tông màu tối như Đen, Xám carbon, hoặc các sắc màu nổi bật như Cam, Xanh ngọc để tạo điểm nhấn.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- ===========================================================
+             CARD 5: THÁNH ĐỊA SÂN NHÀ (Chia 2 cột Trực quan)
+             =========================================================== -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Thánh Địa Sân Nhà</h2>
+            </div>
+            <div class="card-body" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                
+                <!-- Cột thông tin chữ -->
+                <div style="flex: 12; min-width: 300px;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 12px 0; border-bottom: 1px solid #eee;">
+                            <strong style="color: #D4AF37; display: inline-block; width: 150px;">Tên sân vận động:</strong> 
+                            <span style="font-weight: bold; color: #333;">Estadio Santiago Bernabéu</span>
+                        </li>
+                        <li style="padding: 12px 0; border-bottom: 1px solid #eee;">
+                            <strong style="color: #D4AF37; display: inline-block; width: 150px;">Sức chứa:</strong> 
+                            <span>Khoảng 85.000 chỗ ngồi (Siêu thánh địa sau khi hoàn thành đại trùng tu hiện đại hóa).</span>
+                        </li>
+                        <li style="padding: 12px 0; border-bottom: 1px solid #eee;">
+                            <strong style="color: #D4AF37; display: inline-block; width: 150px;">Địa chỉ:</strong> 
+                            <span>Av. de Concha Espina, 1, 28036 Madrid, Tây Ban Nha.</span>
+                        </li>
+                        <li style="padding: 12px 0;">
+                            <strong style="color: #D4AF37; display: inline-block; width: 150px;">Kỳ quan công nghệ:</strong> 
+                            <span>Sở hữu hệ thống mái che di động đóng/mở trong 15 phút, màn hình LED 360 độ quanh sân, và công nghệ rút thảm cỏ bảo quản dưới lòng đất cực đỉnh.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Cột hình ảnh minh họa -->
+                <div style="flex: 10; min-width: 280px; text-align: center;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Bernab%C3%A9u_despu%C3%A9s_de_la_reforma.jpg/960px-Bernab%C3%A9u_despu%C3%A9s_de_la_reforma.jpg" 
+                         alt="Sân vận động Santiago Bernabeu" 
+                         style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; border: 2px solid #D4AF37; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
+                    <p style="margin-top: 8px; font-size: 0.85em; color: #777; font-style: italic;">Góc nhìn choáng ngợp bên trong chảo lửa Santiago Bernabéu</p>
+                </div>
+                
+            </div>
+        </div>
+        <!-- ===========================================================
+             STYLE BỔ SUNG CHO PHẦN BAN HUẤN LUYỆN & DANH SÁCH CẦU THỦ
+             =========================================================== -->
+        <style>
+            .squad-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+            .squad-table th {
+                background: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+                color: #ffffff;
+                padding: 12px;
+                text-align: left;
+                font-size: 0.95em;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            .squad-table td {
+                padding: 12px;
+                border-bottom: 1px solid #eeeeee;
+                color: #444444;
+            }
+            .squad-table tr:hover {
+                background-color: #fffef0; /* Hiệu ứng đổi màu nhẹ khi di chuột vào dòng */
+            }
+            .position-heading {
+                color: #D4AF37;
+                font-size: 1.3em;
+                margin: 35px 0 10px 0;
+                padding-left: 10px;
+                border-left: 4px solid #333;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .badge-no {
+                background-color: #333;
+                color: #fff;
+                padding: 3px 8px;
+                border-radius: 4px;
+                font-weight: bold;
+                font-size: 0.9em;
+                display: inline-block;
+                min-width: 20px;
+                text-align: center;
+            }
+        </style>
+
+        <!-- ===========================================================
+             CARD 6: BAN HUẤN LUYỆN & BAN QUẢN LÝ
+             =========================================================== -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Ban Huấn Luyện & Ban Quản Lý (Mùa 2025-2026)</h2>
+            </div>
+            <div class="card-body">
+                <table class="squad-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 35%;">Chức vụ</th>
+                            <th style="width: 40%;">Họ và Tên</th>
+                            <th style="width: 25%;">Quốc tịch</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Huấn luyện viên trưởng</strong></td>
+                            <td>Álvaro Arbeloa <br><small style="color:#777;">(Thay thế Xabi Alonso từ tháng 1/2026)</small></td>
+                            <td>Tây Ban Nha</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trợ lý huấn luyện viên</strong></td>
+                            <td>Julián Carmona</td>
+                            <td>Tây Ban Nha</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trợ lý huấn luyện viên</strong></td>
+                            <td>Ricardo da Silva</td>
+                            <td>Bồ Đào Nha</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Huấn luyện viên thủ môn</strong></td>
+                            <td>Luis Llopis</td>
+                            <td>Tây Ban Nha</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trưởng bộ phận thể lực</strong></td>
+                            <td>Antonio Pintus</td>
+                            <td>Ý</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bác sĩ trưởng đội bóng</strong></td>
+                            <td>Dr. Niko Mihić / Felipe Segura</td>
+                            <td>Croatia / Tây Ban Nha</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ===========================================================
+             CARD 7: DANH SÁCH & HỒ SƠ CHI TIẾT CẦU THỦ
+             =========================================================== -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Đội Hình Hoàng Gia Chi Tiết (Mùa 2025-2026)</h2>
+            </div>
+            <div class="card-body" style="overflow-x: auto;">
+                <p style="color: #666; font-style: italic; margin-bottom: 20px;">
+                    *Bảng dữ liệu chứa hồ sơ cá nhân (Profile) chính thức của các cầu thủ thuộc biên chế đội một Real Madrid.
+                </p>
+
+                <!-- THỦ MÔN -->
+                <div class="position-heading">Thủ Môn (Goalkeepers)</div>
+                <table class="squad-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 8%;">Số áo</th>
+                            <th style="width: 25%;">Họ và Tên</th>
+                            <th style="width: 15%;">Ngày sinh</th>
+                            <th style="width: 15%;">Chiều cao / Cân nặng</th>
+                            <th style="width: 15%;">Quốc tịch</th>
+                            <th style="width: 22%;">Vị trí sở trường</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge-no">1</span></td>
+                            <td><strong>Thibaut Courtois</strong></td>
+                            <td>11/05/1992</td>
+                            <td>2.00 m / 96 kg</td>
+                            <td>Bỉ</td>
+                            <td>Thủ môn bắt chính (GK)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">13</span></td>
+                            <td><strong>Andriy Lunin</strong></td>
+                            <td>11/02/1999</td>
+                            <td>1.91 m / 80 kg</td>
+                            <td>Ukraine</td>
+                            <td>Thủ môn dự bị (GK)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- HẬU VỆ -->
+                <div class="position-heading">Hậu Vệ (Defenders)</div>
+                <table class="squad-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 8%;">Số áo</th>
+                            <th style="width: 25%;">Họ và Tên</th>
+                            <th style="width: 15%;">Ngày sinh</th>
+                            <th style="width: 15%;">Chiều cao / Cân nặng</th>
+                            <th style="width: 15%;">Quốc tịch</th>
+                            <th style="width: 22%;">Vị trí sở trường</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge-no">2</span></td>
+                            <td><strong>Dani Carvajal</strong> (C)</td>
+                            <td>11/01/1992</td>
+                            <td>1.73 m / 73 kg</td>
+                            <td>Tây Ban Nha</td>
+                            <td>Hậu vệ phải (RB)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">3</span></td>
+                            <td><strong>Éder Militão</strong></td>
+                            <td>18/01/1998</td>
+                            <td>1.86 m / 78 kg</td>
+                            <td>Brazil</td>
+                            <td>Trung vệ (CB)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">4</span></td>
+                            <td><strong>David Alaba</strong></td>
+                            <td>24/06/1992</td>
+                            <td>1.80 m / 78 kg</td>
+                            <td>Áo</td>
+                            <td>Trung vệ / Hậu vệ trái</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">12</span></td>
+                            <td><strong>Trent Alexander-Arnold</strong></td>
+                            <td>07/10/1998</td>
+                            <td>1.75 m / 70 kg</td>
+                            <td>Anh</td>
+                            <td>Hậu vệ phải / Tiền vệ điều tiết</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">22</span></td>
+                            <td><strong>Antonio Rüdiger</strong></td>
+                            <td>03/03/1993</td>
+                            <td>1.90 m / 85 kg</td>
+                            <td>Đức</td>
+                            <td>Trung vệ dập (CB)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">20</span></td>
+                            <td><strong>Fran García</strong></td>
+                            <td>14/08/1999</td>
+                            <td>1.69 m / 69 kg</td>
+                            <td>Tây Ban Nha</td>
+                            <td>Hậu vệ cánh trái (LB)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">24</span></td>
+                            <td><strong>Dean Huijsen</strong></td>
+                            <td>14/04/2005</td>
+                            <td>1.97 m / 80 kg</td>
+                            <td>Tây Ban Nha</td>
+                            <td>Trung vệ lệch trái (CB)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- TIỀN VỆ -->
+                <div class="position-heading">Tiền Vệ (Midfielders)</div>
+                <table class="squad-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 8%;">Số áo</th>
+                            <th style="width: 25%;">Họ và Tên</th>
+                            <th style="width: 15%;">Ngày sinh</th>
+                            <th style="width: 15%;">Chiều cao / Cân nặng</th>
+                            <th style="width: 15%;">Quốc tịch</th>
+                            <th style="width: 22%;">Vị trí sở trường</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge-no">5</span></td>
+                            <td><strong>Jude Bellingham</strong></td>
+                            <td>29/06/2003</td>
+                            <td>1.86 m / 75 kg</td>
+                            <td>Anh</td>
+                            <td>Tiền vệ công / Hộ công (CAM)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">6</span></td>
+                            <td><strong>Eduardo Camavinga</strong></td>
+                            <td>10/11/2002</td>
+                            <td>1.82 m / 71 kg</td>
+                            <td>Pháp</td>
+                            <td>Tiền vệ trung tâm (CM / DM)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">8</span></td>
+                            <td><strong>Federico Valverde</strong></td>
+                            <td>22/07/1998</td>
+                            <td>1.82 m / 78 kg</td>
+                            <td>Uruguay</td>
+                            <td>Tiền vệ box-to-box (CM / RW)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">14</span></td>
+                            <td><strong>Aurélien Tchouaméni</strong></td>
+                            <td>27/01/2000</td>
+                            <td>1.87 m / 81 kg</td>
+                            <td>Pháp</td>
+                            <td>Tiền vệ phòng ngự (CDM)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">15</span></td>
+                            <td><strong>Arda Güler</strong></td>
+                            <td>25/02/2005</td>
+                            <td>1.75 m / 70 kg</td>
+                            <td>Thổ Nhĩ Kỳ</td>
+                            <td>Tiền vệ kiến thiết / Cánh phải</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">21</span></td>
+                            <td><strong>Brahim Díaz</strong></td>
+                            <td>03/08/1999</td>
+                            <td>1.70 m / 68 kg</td>
+                            <td>Morocco</td>
+                            <td>Tiền vệ công tự do (AM / RW)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- TIỀN ĐẠO -->
+                <div class="position-heading">Tiền Đạo (Forwards)</div>
+                <table class="squad-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 8%;">Số áo</th>
+                            <th style="width: 25%;">Họ và Tên</th>
+                            <th style="width: 15%;">Ngày sinh</th>
+                            <th style="width: 15%;">Chiều cao / Cân nặng</th>
+                            <th style="width: 15%;">Quốc tịch</th>
+                            <th style="width: 22%;">Vị trí sở trường</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge-no">7</span></td>
+                            <td><strong>Vinícius Júnior</strong></td>
+                            <td>12/07/2000</td>
+                            <td>1.76 m / 62 kg</td>
+                            <td>Brazil</td>
+                            <td>Tiền đạo cánh trái (LW)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">10</span></td>
+                            <td><strong>Kylian Mbappé</strong></td>
+                            <td>20/12/1998</td>
+                            <td>1.78 m / 75 kg</td>
+                            <td>Pháp</td>
+                            <td>Tiền đạo trung phong / Cánh trái</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">11</span></td>
+                            <td><strong>Rodrygo Goes</strong></td>
+                            <td>09/01/2001</td>
+                            <td>1.74 m / 64 kg</td>
+                            <td>Brazil</td>
+                            <td>Tiền đạo cánh linh hoạt (RW / LW)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge-no">9</span></td>
+                            <td><strong>Endrick</strong></td>
+                            <td>21/07/2006</td>
+                            <td>1.73 m / 71 kg</td>
+                            <td>Brazil</td>
+                            <td>Tiền đạo mục tiêu <br><small style="color:#777;">(Đi mượn tại Lyon từ 1/2026)</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> <!-- Đóng container -->
+
+    <!-- PHẦN CHÂN TRANG -->
+    <footer>
+        <p>© 2026 - Dạo Bước Bernabeu. Bản quyền thuộc về các Madridista.</p>
+    </footer>
+
+</body>
+</html>
